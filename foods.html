@@ -1,0 +1,97 @@
+<h1 class="MainHeadingInSubPages">Foods</h1>
+<div ng-init="sourceOFMyPic = 'img/mainImage7.jpg'" class="MainImageOfPage">
+<img ng-src="{{sourceOFMyPic}}" class="initialImage">
+</div>
+<div class="MainBodyTextInSubPages">
+
+  <div class="divMidTextImage">
+    <h3>This pokemon loves a high calorie meal</h3>
+  <img src="img/pokemonFood.jpg">
+  </div>
+<p>
+  <h2>Food for kids with CF</h2>
+   Sometimes kids with CF do not feel well enough to eat the foods most teens crave.
+They cannot skip melas either. athey have to be carefule of what they eat and when. </p>
+<p>Kids with cystic fibrosis must eat more Milk and dairy products which provide energy and calcium for the body.
+High protien foods must also be taken to get energy to fight the illness. Fruits and vegetbles will help to provide vitamins and minearls to keep kids healthy.</p>
+
+<h3>What kind of foods should you eat</h3>
+  <p>Kids with CF have to eat high-fat, high-calorie foods in order to remain healthy.</p>
+  <p>Kids with CF must eat more Milk and dairy products</p>
+  <p>Kids with CF must eat foods that give more enrgy and calcium</p>
+  <p>You must eat foods that give protiens, vitamins and minerals</p>
+  <img class="ImageBetweenText img-rounded" src="img/foodpageimage1.jpg">
+<h3>What kind of foods should you not eat</h3>
+  <p>Foods and drinks with low sugar and artificial sweeteners must be avoided</p>
+  <p>Foods with low fat and protien that are low in calories</p>
+  <p>Dairy products with low calcium levels such as almond milk</p>
+  <img class="ImageBetweenText img-rounded" src="img/foodpageimage2.jpg">
+<h3>When should kids with CF eat</h3>
+  <p>You should eat at the times the doctor tells you to eat</p>
+  <p>If the doctor allows it, eat when ever you feel like eating</p>
+  <p>Kids with CF should distribute the meals throughout the day</p>
+  <p>Keep a snack or drink with you to consume at all times</p>
+  <img class="ImageBetweenText img-rounded" src="img/foodpageimage3.jpg">
+<h3>How should you eat</h3>
+  <p>Kids with CF must not skip meals inorder to remain healthy</p>
+  <p>You should eat enzynes with all meals</p>
+  <p>You should eat the most at lunch time</p>
+  <img class="ImageBetweenText img-rounded" src="img/foodpageimage4.jpg">
+<h3>Why is good diet important for kids with CF</h3>
+  <p>Kids with CF need a lot more calories than other kids</p>
+  <p>Kids with CF needs foods that help correct limitations in their bodies</p>
+  <p>You must avoid certain foods if you want to remain healthy</p>
+  <p>You must eat well so that medicines and enzymes can be effective for you</p>
+  <img class="ImageBetweenText img-rounded" src="img/foodpageimage5.jpeg">
+<!-- -->
+<!--<input type="radio" ng-model="myVar" ng-init="myVar = true">
+<input type="radio" ng-model="myVar2" ng-init="myVar = true">-->
+
+<div class="wrap">
+  <h2>Choose your meal game</h2>
+    <h3>Do you like pasta or bread better?</h3>
+    <p>Select what you want to see a meal plan designed for your pleasure</p>
+    <form>
+      <label for="pasta">I like pasta!</label>
+      <input id="pasta" type="radio" name="content" ng-model="content" value="pasta">
+      <br />
+      <label for="bread">I like bread!</label>
+      <input id="bread" type="radio" name="content" ng-model="content" value="bread">
+    </form>
+
+    <div class="wrapper">
+      <h2 ng-show="content == 'pasta'">Sample meal</h2>
+      <h4 ng-show="content == 'pasta'">This sample meal plan provides approximately 3,750 calories. The links will give you recipes for high-calorie foods that teens with CF can make:</h4>
+      <h3 ng-show="content == 'pasta'">Breakfast</h3>
+      <p ng-show="content == 'pasta'">A plate of spagetti, 3 frozen pancakes with 1 tablespoon butter and 3 tablespoons syrup, ½ cup of strawberries, Mighty Milk</p>
+      <h3 ng-show="content == 'pasta'">Morning Snack</h3>
+      <p ng-show="content == 'pasta'">Crispy penne snack, 1 cup whole-milk yogurt, ½ cup granola, ½ banana, water</p>
+      <h3 ng-show="content == 'pasta'">Lunch</h3>
+      <p ng-show="content == 'pasta'">1 plate mac and cheese, Sandwich made with 4 ounces of turkey, 1 ounce of cheese, 1 tablespoon mayonnaise, 3 teaspoons mustard, lettuce, tomato, and/or onion, 10 baby carrots with 2 tablespoons ranch dressing, ½ cup apple juice, 14 pretzels, water</p>
+      <h3 ng-show="content == 'pasta'">Afternoon Snack</h3>
+      <p ng-show="content == 'pasta'">Penne Lasagne, ½ cup trail mix and 1 cup Mighty Milk</p>
+      <h3 ng-show="content == 'pasta'">Dinner</h3>
+      <p ng-show="content == 'pasta'">Lasagne with Creamy chicken fettuccine with broccoli,  ½ cup juice, water</p>
+      <!---->
+      <h2 ng-show="content == 'bread'">Sample meal</h2>
+      <h4 ng-show="content == 'bread'">This sample meal plan provides approximately 3,500 calories. The links will give you recipes for high-calorie foods that teens with CF can make:</h4>
+      <h3 ng-show="content == 'bread'">Breakfast</h3>
+      <p ng-show="content == 'bread'">Cheese Burger, ½ cup trail mix and 1 cup Mighty Milk, ½ cup of strawberries, Creamy chicken fettuccine with broccoli</p>
+      <h3 ng-show="content == 'bread'">Morning Snack</h3>
+      <p ng-show="content == 'bread'">Club sandwitch with extra cheese, 1 ounce of cheese, ½ cup granola, ½ banana, water</p>
+      <h3 ng-show="content == 'bread'">Lunch</h3>
+      <p ng-show="content == 'bread'">Chicken Submarine, Sandwich made with 4 ounces of turkey, 1 cup whole-milk yogurt, 1 tablespoon mayonnaise, 3 teaspoons mustard, lettuce, tomato, and/or onion, 10 baby carrots with 2 tablespoons ranch dressing, ½ cup apple juice, 14 pretzels, water</p>
+      <h3 ng-show="content == 'bread'">Afternoon Snack</h3>
+      <p ng-show="content == 'bread'">Chicken Nuggets, 2 frozen pancakes with 1 tablespoon butter and 3 tablespoons syrup</p>
+      <h3 ng-show="content == 'bread'">Dinner</h3>
+      <p ng-show="content == 'bread'">Beef burger with eggs,  Mighty Milk,  ½ cup juice, water</p>    </div>
+  </div>
+<!---->
+<h2>Help this little CF mouse eat</h2>
+<h3>Hover over the image to make it eat</h3>
+<div class="hoverImage" ng-init="bg = 'img/eatAnimated.jpg'"
+  ng-mouseenter="bg = 'img/eatAnimated.gif'"
+  ng-mouseleave="bg = 'img/eatAnimated.jpg'"
+  style="background-image: url({{bg}});">
+</div>
+</div>

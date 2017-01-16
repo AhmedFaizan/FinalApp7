@@ -1,0 +1,29 @@
+{
+"medicines" : [
+  {
+    "medicineName": "Muclotics",
+    "medicineUse": "to treat mucus problems",
+    "medicineType": "eat"
+  },
+  {
+    "medicineName": "Antibiotics",
+    "medicineUse": "to kill bacteria",
+    "medicineType": "eat"
+  },
+  {
+    "medicineName": "Bronchodilators",
+    "medicineUse": "widen Airways",
+    "medicineType": "inhale"
+  },
+  {
+    "medicineName": "Anti-inflammatory agents",
+    "medicineUse": "to ease pain",
+    "medicineType": "eat"
+  },
+  {
+    "medicineName": "CFTR potentiators",
+    "medicineUse": "correct abnormalities",
+    "medicineType": "eat"
+  }
+]
+}

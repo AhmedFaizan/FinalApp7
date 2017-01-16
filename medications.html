@@ -1,0 +1,48 @@
+<div ng-controller="medicinesController as mc">
+<!--<script src="js/medications.js"></script>-->
+<h1 class="MainHeadingInSubPages">Medications Available</h1>
+<div ng-init="sourceOFMyPic = 'img/mainImage4.jpg'" class="MainImageOfPage">
+<img ng-src="{{sourceOFMyPic}}" class="initialImage">
+</div>
+<div class="MainBodyTextInSubPages">
+  <h2>Medications for kids with CF</h2>
+<p>There are many medications for kids with CF. It includes pancreatic enzyme supplements, multivitamins. Other medications for kids include: </p>
+<ul>
+  <li class="LiToLoadService" ng-repeat="medicine in mc.medicines">{{medicine.medicineName}}, is used to, {{medicine.medicineUse}}, and to use it you must {{medicine.medicineType}}</li>
+<!-- <li>mucolytics</li>
+<li>antibiotics </li>
+<li>bronchodilators</li>
+<li>anti-inflammatory agents</li>
+<li>CFTR potentiators</li> -->
+</ul>
+<div class="divMidTextImage">
+  <h3>This pokemon looks healthy and smart because he eats his medicines</h3>
+<img src="img/treeko.png">
+</div>
+<p>We will cover enzymes in another page. So lets learn about medications</p>
+<h2>Mucolytics</h2>
+  <p>This medicine is even named after mucus. It is called MUCO-luytics.
+  <p>Mucus build up heppens in the body of kids with cystic fibrosis. To keep this under control, mucolytics medications are used</p>
+  <p>Mucolytics are medicines that make the mucus (sputum) less thick and easier to cough up. If this medicine is not used, mucus will make the kids sick.</p>
+  <img class="ImageBetweenText img-rounded" src="img/medpageimage1.jpg">
+<h2>Antibiotics</h2>
+  <p>Bacteria build up may happen due to mucus in the bodies of kids with cystic fibrosis.</p>
+  <p> To figth bacteria, antibiotics can be used after your doctor says that it is ok.</p>
+  <p>There may be small side-effects(problems) when you start using antibiotics</p>
+  <p>Antibiotics should be used as less as possible as there effectiveness reduces if you use too much.</p>
+  <img class="ImageBetweenText img-rounded" src="img/medpageimage2.jpg">
+<h2>Bronchodilators</h2>
+  <p>Bronchodilators can widen airways by helping the muscles relax. This could allow more air to travel through the airways.</p>
+  <p> This will also help other medications work more effectively for kids with cystic fibrosis</p>
+  <p>There are broncodilators that work for a long time and ones that work for a short amount of time. </p>
+  <img class="ImageBetweenText img-rounded" src="img/medpageimage3.jpg">
+<h2>Anti-inflammatory agents</h2>
+  <p>Anti-inflammatory medicines help if any kids feel any pain. These medicines will be chosen specally for the child.</p>
+  <p>This type of medicine is used for short term effects usually</p>
+  <p>Overuse of this medicine can cause serious problems to the child</p>
+  <img class="ImageBetweenText img-rounded" src="img/medpageimage4.jpg">
+<h2>CFTR potentiators</h2>
+<img class="ImageBetweenText img-rounded" src="img/medpageimage5.png">
+<p>CFTR potentiators help to correct problems in the bodies of children with CF. </p>
+</div>
+</div>

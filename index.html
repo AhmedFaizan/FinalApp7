@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>MYCF- Lets learn about CF</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="js/angular.js"></script>
+	<script src="js/angular-idle.js"></script>
+	<script src="js/angular-route.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="controllers/controller.js"></script>
+	<script src="js/httpService.js"></script>
+	<link rel="stylesheet" type="text/css" href="mycss.css">
+</head>
+<body ng-app="mainApp">
+<div class="container">
+</div>
+</br>
+</br>
+<!--<ul class="nav navbar-nav">
+	<li><a href="#/">Home</a></li>
+	<li><a href="#/info">info</a></li>
+	<li><a href="#/stats">Stats</a></li>
+	<li><a href="#/medications">Medications</a></li>
+	<li><a href="#/enzymes">enzymes</a></li>
+	<li><a href="#/regimen">regimen</a></li>
+	<li><a href="#/foods">foods</a></li>
+</ul>-->
+<!--<ul class="nav nav-tabs">
+	<li role="presentation" class="active"><a href="#/">Home</a></li>
+	<li role="presentation"><a href="#/info">info</a></li>
+	<li role="presentation"><a href="#/stats">Stats</a></li>
+	<li role="presentation"><a href="#/medications">Medications</a></li>
+	<li role="presentation"><a href="#/enzymes">enzymes</a></li>
+	<li role="presentation"><a href="#/regimen">regimen</a></li>
+	<li role="presentation"><a href="#/foods">foods</a></li>
+</ul>-->
+
+<!-- -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#/"><!--<img src="img/logo.png" style="width: 50%; height:100%;">-->MYCF</img></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+			<!--	<li class="active"><a href="#/">Home <span class="sr-only">(current)</span></a></li>-->
+				<!--<li ><a href="#/">Home </a></li>-->
+
+				<li><a href="#/info">Info</a></li>
+				<li onclick="Ctrl()"><a href="#/stats">Stats</a></li>
+				<li><a href="#/medications">Medications</a></li>
+				<li><a href="#/enzymes">Enzymes</a></li>
+				<li><a href="#/regimen">Regimen</a></li>
+				<li><a href="#/foods">Foods</a></li>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!-- -->
+
+
+
+
+
+
+<div ng-view></div>
+<!--<div class="footer" ng-init="sourceOFMyPic = 'img/logo.png';sourceOFMyPic2 = 'img/s2.png';sourceOFMyPic3 = 'img/s3.png';sourceOFMyPic4 = 'img/s4.png';">-->
+
+<div class="footer">
+	<div class="footerDrawing">
+		<img class="footerDrawing" src="img/footerDrawing.png">
+	</div>
+<div class="footerMainContents">
+<div class="footerSiteLinks">
+<ul>Affiliates
+	<li><a href="https://www.google.mv/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=0ahUKEwjgp-K1q7zQAhVBN48KHeLWBb8QFggmMAE&url=https%3A%2F%2Fwww.cff.org%2FWhat-is-CF%2FAbout-Cystic-Fibrosis%2F&usg=AFQjCNGH2DbY6EQjK96XDZZjH_O-bCofZQ&sig2=lReyE20GmX_ZeoKM6fo_qA">CsticFibrosis.org</a></li>
+	<li><a href="https://www.google.mv/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=0ahUKEwjgp-K1q7zQAhVBN48KHeLWBb8QFggsMAI&url=http%3A%2F%2Fwww.mayoclinic.org%2Fdiseases-conditions%2Fcystic-fibrosis%2Fhome%2Fovc-20211890&usg=AFQjCNE8mDCL7iMthvGBESrQqeHamT1MeA&sig2=RtLx25eoCCLWDkl763gNrA">MayoClinic</a></li>
+	<li><a href="https://www.google.mv/url?sa=t&rct=j&q=&esrc=s&source=web&cd=4&cad=rja&uact=8&ved=0ahUKEwjgp-K1q7zQAhVBN48KHeLWBb8QFggyMAM&url=https%3A%2F%2Fmedlineplus.gov%2Fcysticfibrosis.html&usg=AFQjCNHFzBgFNMom1pnIhNgcNUhN3xs9YQ&sig2=Pge-EReYFJk1hqCFtqX7Lw">MedlinePlus</a></li>
+	<li><a href="https://www.google.mv/url?sa=t&rct=j&q=&esrc=s&source=web&cd=7&cad=rja&uact=8&ved=0ahUKEwjgp-K1q7zQAhVBN48KHeLWBb8QFghDMAY&url=https%3A%2F%2Fghr.nlm.nih.gov%2Fcondition%2Fcystic-fibrosis&usg=AFQjCNExWJmnYJyjfZ-Q0Kt_RksOZEqeOQ&sig2=A6hs6Jz8mZkPVtukzBVdbA">Genetics Home Reference</a></li>
+	<li><a href="https://www.google.mv/url?sa=t&rct=j&q=&esrc=s&source=web&cd=4&cad=rja&uact=8&ved=0ahUKEwjgp-K1q7zQAhVBN48KHeLWBb8QFggyMAM&url=https%3A%2F%2Fmedlineplus.gov%2Fcysticfibrosis.html&usg=AFQjCNHFzBgFNMom1pnIhNgcNUhN3xs9YQ&sig2=Pge-EReYFJk1hqCFtqX7Lw">Kid's Health</a></li>
+
+</ul>
+</div>
+<div class="footerSiteLinks">
+<ul>Useful links
+
+<li><a href="https://www.google.mv/url?sa=t&rct=j&q=&esrc=s&source=web&cd=4&cad=rja&uact=8&ved=0ahUKEwj7-9rhsrzQAhXErY8KHR_tBhkQFggrMAM&url=http%3A%2F%2Fwww.genet.sickkids.on.ca%2FLinkPage.html&usg=AFQjCNEE_OT52BmQLLxO_D4gL9BlRM9ShQ&sig2=HtslKNdb0r-7ben7-h8iSQ&bvm=bv.139782543,d.c2I">
+Mutation Database</a>
+</li>
+<li><a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiKkdLmvLzQAhXUhWgKHTfkBKAYABAA&ohost=www.google.mv&cid=CAESIuD2fz0VlOw3AJ1Ab-RfGsgehmHxkYviUL1zPJyQ2znn6c0&sig=AOD64_1I7u2ihWU2d1kHpwjtM_iWZV3wxA&q=&ved=0ahUKEwjU8s3mvLzQAhXEPY8KHawaChc4FBDRDAgX&adurl=">Tpric.org</a>
+</li>
+<li><a href="https://www.google.mv/aclk?sa=L&ai=DChcSEwiKkdLmvLzQAhXUhWgKHTfkBKAYABAF&sig=AOD64_0LUeZtsqjUv4cMmyuXKKHtpQMjFQ&q=&ved=0ahUKEwjU8s3mvLzQAhXEPY8KHawaChc4FBDRDAgi&adurl=">
+CfBuzz.org</a></li>
+<li><a href="https://www.google.mv/url?sa=t&rct=j&q=&esrc=s&source=web&cd=22&cad=rja&uact=8&ved=0ahUKEwjU8s3mvLzQAhXEPY8KHawaChc4FBAWCC4wAQ&url=https%3A%2F%2Fwww.facebook.com%2Fcysticfibrosisfoundation%2F&usg=AFQjCNGwEI98MXppBq7Alc_umTO4u4L1UA&sig2=Y1BFynQlibfkRR0wJJP24g">
+CF Foundation Fb</a></li>
+<li><a href="https://www.google.mv/url?sa=t&rct=j&q=&esrc=s&source=web&cd=24&cad=rja&uact=8&ved=0ahUKEwjU8s3mvLzQAhXEPY8KHawaChc4FBAWCDowAw&url=http%3A%2F%2Fwww.babysfirsttest.org%2Fnewborn-screening%2Fconditions%2Fcystic-fibrosis-cf&usg=AFQjCNG7ysaihR4JN2PbuLM95rVimRSmdw&sig2=lMVV9ONhxvhhIgynRW-QhQ">
+Baby'sFirstTest.org</a></li>
+</ul>
+</div>
+<div class="footerSiteLinks">
+<ul>Donations
+<li><a href="https://www.google.mv/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=0ahUKEwiT4L_tvrzQAhUJQo8KHbWiDbYQFgg3MAI&url=https%3A%2F%2Fsecure2.convio.net%2Fcffh%2Fsite%2FDonation2%3F1761.donation%3Dform1%26df_id%3D1761&usg=AFQjCNHXCftMXRBxD3R52Hsn8c4qk8GX5w&sig2=-a-oPC4hYZoITYzKk9vQgA&bvm=bv.139782543,d.c2I">
+Convio</a></li>
+<li><a href="https://www.google.mv/url?sa=t&rct=j&q=&esrc=s&source=web&cd=4&cad=rja&uact=8&ved=0ahUKEwiT4L_tvrzQAhUJQo8KHbWiDbYQFgg9MAM&url=https%3A%2F%2Fwww.cff.org%2FTake-Action%2FWays-to-Give%2F&usg=AFQjCNGXJftXB_bF6lHJ7IN8MuP2ovzA7g&sig2=DIEIPl6jHajWCMYzQlcJnQ&bvm=bv.139782543,d.c2I">
+Cff.org</a></li>
+<li><a href="https://www.google.mv/url?sa=t&rct=j&q=&esrc=s&source=web&cd=5&cad=rja&uact=8&ved=0ahUKEwiT4L_tvrzQAhUJQo8KHbWiDbYQFghIMAQ&url=https%3A%2F%2Fwww.cysticfibrosis.org.uk%2Fdonate&usg=AFQjCNGLNCUk5h7OdSfKBvnn8at6ld8MMw&sig2=v5US5xXQYu0f2qJOkSjg9Q&bvm=bv.139782543,d.c2I">
+CF New Zealand</a></li>
+<li><a href="https://www.google.mv/url?sa=t&rct=j&q=&esrc=s&source=web&cd=27&cad=rja&uact=8&ved=0ahUKEwiAluDlv7zQAhVILI8KHSbjDZQ4FBAWCF0wBg&url=http%3A%2F%2Fwww.cysticfibrosisidaho.com%2Fdonate%2F&usg=AFQjCNEnqZDXr9i56iN2n8_ULKCRsgI4Vw&sig2=Vjq6zxyLEC2KLarhPmSmNQ&bvm=bv.139782543,d.c2I">
+Cf Idaho</a></li>
+</ul>
+</div>
+</div>
+
+
+
+
+<div class="copyrightDiv">Copyright 2016</div>
+
+
+</div>
+</body>
+</html>
